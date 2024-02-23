@@ -9,7 +9,7 @@ hands = mphands.Hands(
     max_num_hands=2,
     min_tracking_confidence=0.75,
     min_detection_confidence=0.75)
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0) # 0 for webcam
 while True :
     success, image = cap.read()
     img = cv2.flip(image, 1)
